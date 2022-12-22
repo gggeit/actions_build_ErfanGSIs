@@ -30,8 +30,9 @@ jobs:
            
        - name: Initialization environment
          run: |
-            sudo -E apt-get -qq install git wget
-            pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pylint==1.9.3
+           pip install -i https://pypi.tuna.tsinghua.edu.cn/simple --upgrade pylint==1.9.3
+           sudo -E apt-get -qq install git wget
+            
        
        - name: Clone ErfanGSI Source Code
          run: git clone --recurse-submodules https://github.com/erfanoabdi/ErfanGSIs.git ErfanGSIs

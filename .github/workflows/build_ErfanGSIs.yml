@@ -30,6 +30,7 @@ jobs:
            
        - name: Initialization environment
          run: |
+             python -m pip install --upgrade pip
               sudo apt-get -qq install git wget
             
        
